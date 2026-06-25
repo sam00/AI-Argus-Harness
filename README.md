@@ -63,10 +63,13 @@ and the software supply chain:
 - **Kubernetes** — `cluster-admin` bindings, privileged pods, risky RBAC.
 - **Secrets** — hardcoded credentials in source (entropy + placeholder filtered).
 - **Supply chain** — typosquatted and unpinned dependencies.
+- **Endpoints** — missing/unhealthy EDR, unencrypted disks, stale patches, risky
+  listening services on **Windows/macOS/Linux** hosts.
 - **Attack-path chains** — links findings into end-to-end escalation narratives.
 
-Eleven deterministic scanners: `domain`, `network`, `secrets`, `supply_chain`,
-`aws`, `gcp`, `kubernetes`, `saas`, `cicd`, `data_exposure`, `application`.
+Twelve deterministic scanners: `domain`, `network`, `secrets`, `supply_chain`,
+`aws`, `gcp`, `kubernetes`, `saas`, `cicd`, `data_exposure`, `application`,
+`endpoint`.
 
 ## Coverage
 
@@ -84,16 +87,22 @@ behaves identically on every platform and works fully **air-gapped**.
 | Identity & access | Users, roles, service accounts, OAuth apps → privileged & blind-spot **attack paths** | identity graph + `aws`/`gcp`/`saas`/`kubernetes` |
 | SaaS / IdP | OAuth app scopes & over-privileged integrations (e.g. Okta) | `saas` |
 | Application / API | API endpoints, exposed debug/admin routes, missing authentication | `application` |
+| **Endpoints (Windows/macOS/Linux)** | EDR presence/health, disk encryption, patch posture, risky listening services, local admins, suspicious libraries, vulnerable software | `endpoint` |
 | Secrets | Hardcoded credentials/keys/tokens in source | `secrets` |
 | Supply chain | Typosquatted & unpinned dependencies | `supply_chain` |
 | CI/CD | Pipeline/workflow misconfiguration in a repo | `cicd` |
 | Data exposure | Publicly reachable datastores (PostgreSQL, MySQL, …) + PII/PCI data-class risk | `data_exposure` |
 
-> **Endpoints / hosts (Windows, macOS, Linux):** the `network` scanner identifies
-> exposed services across **any host OS** at the protocol level — e.g. **RDP/SMB**
-> (typically Windows), **SSH** (Linux/macOS) — without an agent. Host-agent / **EDR**
-> evidence ingestion is on the [roadmap](#roadmap); the data model already reserves
-> an `endpoint` asset type and an `endpoint-agent` evidence source for it.
+> **Endpoints (Windows, macOS, Linux):** the `endpoint` scanner ingests an
+> **endpoint-agent / EDR / MDM inventory snapshot** (`devices` in the inventory)
+> and flags EDR gaps, unencrypted disks, stale patches, risky listening services,
+> excess local admins, suspicious libraries, and vulnerable software — per host
+> OS. The `network` scanner additionally detects exposed host services at the
+> protocol level (**RDP/SMB**→Windows, **SSH**→Linux/macOS) without an agent.
+
+The harness implements **all 12 coverage layers** of the enterprise design; for
+the full per-layer / per-sub-capability status (implemented vs planned) see
+[`docs/coverage.md`](docs/coverage.md).
 
 ## 60-second install
 
@@ -174,20 +183,22 @@ Real output from the command above (offline, deterministic):
 
 ```text
 AI-Argus-Harness — scan complete
-  run id      : run-19c66f3d3b
+  run id      : run-4a564227de
   target      : ./examples/demo-target
   profile     : enterprise  cost=offline  stealth=passive
   auth        : unauthenticated
-  assets      : 14   identities: 5
-  findings    : 13   review-queue: 0   suppressed: 0   chains: 1
-  severity    : critical:4  high:7  low:2
+  assets      : 16   identities: 5
+  findings    : 20   review-queue: 0   suppressed: 0   chains: 1
+  severity    : critical:4  high:9  medium:5  low:2
 
-  [CRITICAL] Externally assumable admin role: BreakGlassAdmin  (FINDING-98dfd6e005, score 17.5)
-  [CRITICAL] Publicly exposed datastore: prod-postgres-main    (FINDING-158773ac99, score 16.5)
-  [CRITICAL] Publicly accessible storage bucket: prod-customer-exports (FINDING-147afdcd76, score 15.5)
+  [CRITICAL] Externally assumable admin role: BreakGlassAdmin     (FINDING-98dfd6e005, score 17.5)
+  [CRITICAL] Publicly exposed datastore: prod-postgres-main       (FINDING-158773ac99, score 16.5)
+  [CRITICAL] Publicly accessible bucket: prod-customer-exports    (FINDING-147afdcd76, score 15.5)
   [HIGH]     Service account with cluster-admin: payments:default (FINDING-018b128af5, score 12.5)
-  [HIGH]     AWS Access Key hardcoded in source                 (FINDING-c4d7a8ae35, score 9.5)
-  ... and 8 more
+  [HIGH]     AWS Access Key hardcoded in source                   (FINDING-c4d7a8ae35, score 9.5)
+  [HIGH]     No EDR agent on endpoint: win-fin-back-3 (Windows)    (FINDING-498cd34f4f, score 9.0)
+  [HIGH]     Unhealthy EDR agent on endpoint: laptop-eng-014 (macOS)(FINDING-db4f987172, score 9.0)
+  ... and 13 more
 
 Reports: report.json · report.sarif · report.md · executive.md · tickets.json
 ```

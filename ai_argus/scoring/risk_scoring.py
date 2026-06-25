@@ -33,6 +33,7 @@ EXPLOITABILITY: Dict[str, float] = {
     Category.KUBERNETES.value: 2.0,
     Category.SAAS.value: 2.0,
     Category.APPLICATION.value: 2.0,
+    Category.ENDPOINT.value: 2.0,            # a compromised endpoint is directly usable
     Category.SUPPLY_CHAIN.value: 1.5,
     Category.CICD.value: 1.5,
     Category.ATTACK_SURFACE.value: 1.0,

@@ -22,6 +22,7 @@ from . import saas            # noqa: F401
 from . import cicd            # noqa: F401
 from . import data_exposure   # noqa: F401
 from . import application     # noqa: F401
+from . import endpoint        # noqa: F401
 
 __all__ = [
     "Scanner", "ScannerResult", "register", "REGISTRY",

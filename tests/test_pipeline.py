@@ -24,6 +24,7 @@ from ai_argus.reliability.grounding import grounded
 from ai_argus.reliability.voting import vote
 from ai_argus.reporting.sarif import to_sarif
 from ai_argus.scanners.secrets import SecretsScanner
+from ai_argus.scanners.endpoint import EndpointScanner
 from ai_argus.scoring import deduplicate, score_finding
 
 EXAMPLES = Path(__file__).resolve().parents[1] / "examples"
@@ -330,3 +331,52 @@ def test_orchestrator_explicit_auth_resolution_passthrough():
                         attributes={"path": str(EXAMPLES / "vulnerable-sample")})
     result = Orchestrator(cfg).run(target, auth=res)
     assert result.auth["mode"] == "unauthenticated"
+
+
+# --------------------------------------------------------------------------- #
+# Endpoint scanner (macOS / Linux / Windows posture, agent-driven)
+# --------------------------------------------------------------------------- #
+def _endpoint_ctx(devices):
+    cfg = Config(); cfg.provider = "offline"
+    return ScanContext(config=cfg, target=ScanTarget(
+        raw="endpoints", kind="file",
+        attributes={"inventory": {"devices": devices}}))
+
+
+def test_endpoint_scanner_flags_posture_issues():
+    devices = [{
+        "host": "laptop-eng-014", "os": "macos", "environment": "prod",
+        "edr": {"installed": True, "healthy": False},
+        "disk_encryption": False, "patch_age_days": 200,
+        "listening_ports": [3389], "local_admins": ["jdoe", "contractor-tmp"],
+        "suspicious_libraries": ["/tmp/.x/libinject.dylib"],
+        "software": [{"name": "openssl", "version": "1.0.1", "vulnerable": True}],
+    }]
+    res = EndpointScanner().run(_endpoint_ctx(devices))
+    titles = " | ".join(f.title for f in res.findings)
+    assert "Unhealthy EDR" in titles
+    assert "Disk encryption disabled" in titles
+    assert "Stale patch level" in titles
+    assert "Risky service listening" in titles
+    assert "Excessive local admin" in titles
+    assert "Suspicious library" in titles
+    assert "Vulnerable software" in titles
+    # endpoint findings are complete and pass the gate without an identity path
+    for f in res.findings:
+        score_finding(f)
+    gate = completeness_gate(res.findings, strict=False)
+    assert gate.passed and not gate.review
+
+
+def test_endpoint_scanner_no_edr_is_detection_gap():
+    devices = [{"host": "win-1", "os": "windows", "edr": {"installed": False}}]
+    res = EndpointScanner().run(_endpoint_ctx(devices))
+    no_edr = [f for f in res.findings if "No EDR agent" in f.title]
+    assert no_edr and no_edr[0].detection_gap is True
+
+
+def test_endpoint_scanner_inapplicable_without_devices():
+    cfg = Config(); cfg.provider = "offline"
+    ctx = ScanContext(config=cfg, target=ScanTarget(
+        raw="x", kind="file", attributes={}))
+    assert EndpointScanner().applicable(ctx) is False

@@ -7,7 +7,7 @@
         "driver": {
           "name": "AI-Argus-Harness",
           "version": "0.1.0",
-          "informationUri": "https://github.com/sam00/ai-argus-harness",
+          "informationUri": "https://github.com/sam00/AI-Argus-Harness",
           "rules": [
             {
               "id": "identity",
@@ -64,6 +64,16 @@
               "name": "Secrets",
               "shortDescription": {
                 "text": "AI-Argus secrets finding"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "endpoint",
+              "name": "Endpoint",
+              "shortDescription": {
+                "text": "AI-Argus endpoint finding"
               },
               "defaultConfiguration": {
                 "level": "error"
@@ -137,31 +147,6 @@
           "ruleId": "data-exposure",
           "level": "error",
           "message": {
-            "text": "Publicly accessible storage bucket: acme-public-assets \u2014 Object storage readable by anonymous principals."
-          },
-          "properties": {
-            "finding_id": "FINDING-d83fa19551",
-            "severity": "critical",
-            "confidence": "high",
-            "risk_score": 15.5,
-            "asset": "acme-public-assets",
-            "owner": "Cloud Security",
-            "review_status": "auto"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "acme-public-assets"
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "data-exposure",
-          "level": "error",
-          "message": {
             "text": "Publicly accessible storage bucket: prod-customer-exports \u2014 Object storage readable by anonymous principals."
           },
           "properties": {
@@ -178,6 +163,31 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "prod-customer-exports"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "data-exposure",
+          "level": "error",
+          "message": {
+            "text": "Publicly accessible storage bucket: acme-public-assets \u2014 Object storage readable by anonymous principals."
+          },
+          "properties": {
+            "finding_id": "FINDING-d83fa19551",
+            "severity": "critical",
+            "confidence": "high",
+            "risk_score": 15.5,
+            "asset": "acme-public-assets",
+            "owner": "Cloud Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "acme-public-assets"
                 }
               }
             }
@@ -353,6 +363,181 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "examples/demo-target"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "endpoint",
+          "level": "error",
+          "message": {
+            "text": "Unhealthy EDR agent on endpoint: laptop-eng-014 \u2014 EDR agent unhealthy / not reporting."
+          },
+          "properties": {
+            "finding_id": "FINDING-db4f987172",
+            "severity": "high",
+            "confidence": "high",
+            "risk_score": 9.0,
+            "asset": "laptop-eng-014",
+            "owner": "Endpoint Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "laptop-eng-014"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "endpoint",
+          "level": "error",
+          "message": {
+            "text": "No EDR agent on endpoint: win-fin-back-3 \u2014 No EDR/telemetry on host."
+          },
+          "properties": {
+            "finding_id": "FINDING-498cd34f4f",
+            "severity": "high",
+            "confidence": "high",
+            "risk_score": 9.0,
+            "asset": "win-fin-back-3",
+            "owner": "Endpoint Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "win-fin-back-3"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "endpoint",
+          "level": "warning",
+          "message": {
+            "text": "Disk encryption disabled: laptop-eng-014 \u2014 No full-disk encryption."
+          },
+          "properties": {
+            "finding_id": "FINDING-3cac7ef2a3",
+            "severity": "medium",
+            "confidence": "high",
+            "risk_score": 7.0,
+            "asset": "laptop-eng-014",
+            "owner": "Endpoint Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "laptop-eng-014"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "endpoint",
+          "level": "warning",
+          "message": {
+            "text": "Risky service listening on endpoint: ssh (laptop-eng-014) \u2014 ssh listening on 22."
+          },
+          "properties": {
+            "finding_id": "FINDING-95ca783c04",
+            "severity": "medium",
+            "confidence": "high",
+            "risk_score": 7.0,
+            "asset": "laptop-eng-014",
+            "owner": "Endpoint Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "laptop-eng-014"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "endpoint",
+          "level": "warning",
+          "message": {
+            "text": "Excessive local admin rights: laptop-eng-014 \u2014 Excessive/temporary local administrators."
+          },
+          "properties": {
+            "finding_id": "FINDING-3e0ed2034f",
+            "severity": "medium",
+            "confidence": "high",
+            "risk_score": 7.0,
+            "asset": "laptop-eng-014",
+            "owner": "Endpoint Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "laptop-eng-014"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "endpoint",
+          "level": "warning",
+          "message": {
+            "text": "Stale patch level: win-fin-back-3 \u2014 patch_age_days=210."
+          },
+          "properties": {
+            "finding_id": "FINDING-773237bd6e",
+            "severity": "medium",
+            "confidence": "high",
+            "risk_score": 7.0,
+            "asset": "win-fin-back-3",
+            "owner": "Endpoint Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "win-fin-back-3"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "endpoint",
+          "level": "warning",
+          "message": {
+            "text": "Risky service listening on endpoint: rdp (win-fin-back-3) \u2014 rdp listening on 3389."
+          },
+          "properties": {
+            "finding_id": "FINDING-44e92d0418",
+            "severity": "medium",
+            "confidence": "high",
+            "risk_score": 7.0,
+            "asset": "win-fin-back-3",
+            "owner": "Endpoint Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "win-fin-back-3"
                 }
               }
             }

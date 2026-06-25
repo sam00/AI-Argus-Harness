@@ -25,23 +25,25 @@ COST_MODES = ["minimal", "balanced", "research", "deep-research", "offline"]
 STEALTH_MODES = ["passive", "safe", "auth", "stealth"]
 PROFILES = [
     "quick", "enterprise", "cloud", "identity", "kubernetes",
-    "api", "supply-chain", "stealth", "executive", "deep-research",
+    "api", "endpoint", "supply-chain", "stealth", "executive", "deep-research",
 ]
 
 # Which scanners run for each scan profile.
 PROFILE_SCANNERS: Dict[str, List[str]] = {
     "quick": ["domain", "network"],
     "enterprise": ["domain", "network", "secrets", "supply_chain", "aws", "gcp",
-                   "kubernetes", "saas", "cicd", "data_exposure"],
+                   "kubernetes", "saas", "cicd", "data_exposure", "endpoint"],
     "cloud": ["aws", "gcp", "data_exposure"],
     "identity": ["aws", "gcp", "saas", "kubernetes"],
     "kubernetes": ["kubernetes"],
     "api": ["domain", "application"],
+    "endpoint": ["endpoint", "network"],
     "supply-chain": ["supply_chain", "secrets", "cicd"],
     "stealth": ["domain", "network"],
     "executive": ["domain", "network", "secrets", "supply_chain", "aws"],
     "deep-research": ["domain", "network", "secrets", "supply_chain", "aws", "gcp",
-                      "kubernetes", "saas", "cicd", "data_exposure", "application"],
+                      "kubernetes", "saas", "cicd", "data_exposure", "application",
+                      "endpoint"],
 }
 
 

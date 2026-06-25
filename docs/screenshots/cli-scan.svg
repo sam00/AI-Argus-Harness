@@ -28,19 +28,19 @@
     <text x="28" y="102" class="dim">Auth mode: non-authenticated (no key required).</text>
 
     <text x="28" y="138" class="wh">AI-Argus-Harness — scan complete</text>
-    <text x="28" y="160" class="fg">  run id    : <tspan class="tl">run-19c66f3d3b</tspan></text>
+    <text x="28" y="160" class="fg">  run id    : <tspan class="tl">run-4a564227de</tspan></text>
     <text x="28" y="182" class="fg">  profile   : enterprise  cost=offline  stealth=passive</text>
-    <text x="28" y="204" class="fg">  assets    : 14   identities: 5</text>
-    <text x="28" y="226" class="fg">  findings  : <tspan class="wh">13</tspan>   review-queue: 0   suppressed: 0   chains: 1</text>
-    <text x="28" y="248" class="fg">  severity  : <tspan class="crit">critical:4</tspan>  <tspan class="high">high:7</tspan>  <tspan class="dim">low:2</tspan></text>
+    <text x="28" y="204" class="fg">  assets    : 16   identities: 5</text>
+    <text x="28" y="226" class="fg">  findings  : <tspan class="wh">20</tspan>   review-queue: 0   suppressed: 0   chains: 1</text>
+    <text x="28" y="248" class="fg">  severity  : <tspan class="crit">critical:4</tspan>  <tspan class="high">high:9</tspan>  <tspan class="num">medium:5</tspan>  <tspan class="dim">low:2</tspan></text>
 
     <text x="28" y="288"><tspan class="crit">  [CRITICAL]</tspan> <tspan class="fg">Externally assumable admin role: BreakGlassAdmin</tspan>   <tspan class="num">17.5</tspan></text>
     <text x="28" y="310"><tspan class="crit">  [CRITICAL]</tspan> <tspan class="fg">Publicly exposed datastore: prod-postgres-main</tspan>     <tspan class="num">16.5</tspan></text>
     <text x="28" y="332"><tspan class="crit">  [CRITICAL]</tspan> <tspan class="fg">Public storage bucket: prod-customer-exports</tspan>       <tspan class="num">15.5</tspan></text>
     <text x="28" y="354"><tspan class="high">  [HIGH]    </tspan> <tspan class="fg">Service account cluster-admin: payments:default</tspan>    <tspan class="num">12.5</tspan></text>
-    <text x="28" y="376"><tspan class="high">  [HIGH]    </tspan> <tspan class="fg">Privileged pod: payments/card-processor-7f</tspan>         <tspan class="num">12.0</tspan></text>
-    <text x="28" y="398"><tspan class="high">  [HIGH]    </tspan> <tspan class="fg">AWS Access Key hardcoded in source</tspan>                  <tspan class="num">9.5</tspan></text>
-    <text x="28" y="420" class="dim">  ... and 7 more</text>
+    <text x="28" y="376"><tspan class="high">  [HIGH]    </tspan> <tspan class="fg">AWS Access Key hardcoded in source</tspan>                  <tspan class="num">9.5</tspan></text>
+    <text x="28" y="398"><tspan class="high">  [HIGH]    </tspan> <tspan class="fg">No EDR agent on endpoint: win-fin-back-3 (Windows)</tspan> <tspan class="num">9.0</tspan></text>
+    <text x="28" y="420" class="dim">  ... and 14 more</text>
 
     <text x="28" y="458" class="fg">Reports: <tspan class="tl">report.json · report.sarif · report.md · executive.md · tickets.json</tspan></text>
 

@@ -8,12 +8,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **Endpoint scanner** (`endpoint`) — the 12th coverage layer. Deterministic,
+  agent-snapshot-driven posture checks for **Windows / macOS / Linux** devices
+  (`devices` inventory key): EDR presence/health, disk encryption, patch posture,
+  risky listening services, excess/temporary local admins, suspicious libraries,
+  and vulnerable software. New `ENDPOINT` finding category, scoring weight, and an
+  `endpoint` scan profile; added to `enterprise` and `deep-research` profiles.
+- `docs/coverage.md` — full mapping of all **12 coverage layers** and their
+  sub-capabilities with honest implemented/partial/planned status.
 - GitHub publishing package: `SECURITY.md`, `CONTRIBUTING.md`,
   `CODE_OF_CONDUCT.md`, issue/PR templates, CI, CodeQL, OpenSSF Scorecard, and
   Dependabot workflows.
 - Demo assets: `examples/demo-target/`, `examples/sample-report.sarif`,
-  `examples/sample-finding.json`, `examples/redteam-plan.md`, and an
-  architecture diagram under `docs/`.
+  `examples/sample-finding.json`, `examples/redteam-plan.md`, an architecture
+  diagram and a CLI screenshot under `docs/`.
 
 ## [0.1.0] - 2026-06-25
 

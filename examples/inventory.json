@@ -40,5 +40,20 @@
   "endpoints": [
     { "host": "api.acme.com", "route": "/actuator/env", "auth": false },
     { "host": "api.acme.com", "route": "/v1/users", "auth": true }
+  ],
+  "devices": [
+    {
+      "host": "laptop-eng-014", "os": "macos", "os_version": "13.2",
+      "owner": "engineering", "environment": "prod",
+      "edr": { "installed": true, "healthy": false, "product": "CrowdStrike" },
+      "disk_encryption": false, "patch_age_days": 40,
+      "listening_ports": [22], "local_admins": ["jdoe", "contractor-tmp"]
+    },
+    {
+      "host": "win-fin-back-3", "os": "windows", "os_version": "Server 2019",
+      "owner": "finance-platform", "environment": "prod",
+      "edr": { "installed": false }, "disk_encryption": true,
+      "patch_age_days": 210, "listening_ports": [3389]
+    }
   ]
 }

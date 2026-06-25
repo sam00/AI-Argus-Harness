@@ -92,6 +92,7 @@ class Category(str, enum.Enum):
     KUBERNETES_RBAC = "kubernetes-rbac"
     SAAS = "saas"
     APPLICATION = "application"
+    ENDPOINT = "endpoint"
     GENERAL = "general"
 
 
