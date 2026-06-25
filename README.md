@@ -68,6 +68,33 @@ and the software supply chain:
 Eleven deterministic scanners: `domain`, `network`, `secrets`, `supply_chain`,
 `aws`, `gcp`, `kubernetes`, `saas`, `cicd`, `data_exposure`, `application`.
 
+## Coverage
+
+**Runs on Linux, macOS, and Windows** — the core is pure Python **3.9+** with a
+standard-library-only core (no compiled or OS-specific dependencies), so it
+behaves identically on every platform and works fully **air-gapped**.
+
+| Domain | What it assesses | Scanner |
+| --- | --- | --- |
+| External attack surface | DNS records, TLS/certificate posture, exposed services for a domain | `domain` |
+| Network / hosts | Open ports + service fingerprinting; flags risky exposed services: **SSH, RDP, SMB, FTP, Telnet, SMTP, IMAP, POP3, HTTP/S, MySQL, PostgreSQL, Redis, Elasticsearch, MongoDB** | `network` |
+| AWS | IAM roles & trust policies, S3 bucket exposure, CloudTrail logging | `aws` |
+| GCP | IAM service accounts, Cloud Storage bucket exposure | `gcp` |
+| Kubernetes | RBAC bindings (e.g. `cluster-admin`), privileged pods | `kubernetes` |
+| Identity & access | Users, roles, service accounts, OAuth apps → privileged & blind-spot **attack paths** | identity graph + `aws`/`gcp`/`saas`/`kubernetes` |
+| SaaS / IdP | OAuth app scopes & over-privileged integrations (e.g. Okta) | `saas` |
+| Application / API | API endpoints, exposed debug/admin routes, missing authentication | `application` |
+| Secrets | Hardcoded credentials/keys/tokens in source | `secrets` |
+| Supply chain | Typosquatted & unpinned dependencies | `supply_chain` |
+| CI/CD | Pipeline/workflow misconfiguration in a repo | `cicd` |
+| Data exposure | Publicly reachable datastores (PostgreSQL, MySQL, …) + PII/PCI data-class risk | `data_exposure` |
+
+> **Endpoints / hosts (Windows, macOS, Linux):** the `network` scanner identifies
+> exposed services across **any host OS** at the protocol level — e.g. **RDP/SMB**
+> (typically Windows), **SSH** (Linux/macOS) — without an agent. Host-agent / **EDR**
+> evidence ingestion is on the [roadmap](#roadmap); the data model already reserves
+> an `endpoint` asset type and an `endpoint-agent` evidence source for it.
+
 ## 60-second install
 
 ```bash
@@ -369,6 +396,7 @@ docker run --rm -v "$PWD":/work -v "$PWD/out":/out ai-argus-harness \
 ## Roadmap
 
 - Real provider SDK wiring (opt-in) and a full result cache.
+- **Host/endpoint (EDR) evidence ingestion** for Windows/macOS/Linux devices via the reserved `endpoint-agent` source.
 - More scanners (container images, IaC, secrets in CI logs).
 - Signed releases (Sigstore) and SBOM publication.
 - Expanded ATT&CK / ATLAS technique tagging on findings.
