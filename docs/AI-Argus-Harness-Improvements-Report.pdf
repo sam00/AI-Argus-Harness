@@ -1,0 +1,999 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [10 0 R 11 0 R 12 0 R 13 0 R] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Title (AI-Argus-Harness - Improvements & Smoke-Test Report) /Creator (AI-Argus-Harness) /Producer (AI-Argus-Harness) /Author (Sam Gupta) >>
+endobj
+6 0 obj
+<< /Length 3887 >>
+stream
+0 604 612 188 re
+0.1 0.2 0.34 rg
+f
+0 600 612 4 re
+0.03 0.47 0.45 rg
+f
+BT /F2 30 Tf 1 1 1 rg 174 706 Td (AI-Argus-Harness) Tj ET
+BT /F2 16 Tf 0.86 0.9 0.95 rg 165.2 672 Td (Improvements & Smoke-Test Report) Tj ET
+BT /F1 10.5 Tf 0.78 0.83 0.9 rg 147.66 646 Td (Implementation of all 8 recommendations, with verification) Tj ET
+BT /F2 11 Tf 0.9 0.93 0.97 rg 254.57 626 Td (Author: Sam Gupta) Tj ET
+62 496 m
+161.5 496 l
+165.92 496 169.5 499.58 169.5 504 c
+169.5 552 l
+169.5 556.42 165.92 560 161.5 560 c
+62 560 l
+57.58 560 54 556.42 54 552 c
+54 504 l
+54 499.58 57.58 496 62 496 c
+h
+0.9 0.94 0.92 rg
+0.8 0.83 0.88 RG
+0.8 w
+B
+56 496 m
+167.5 496 l
+168.6 496 169.5 496.9 169.5 498 c
+169.5 499 l
+169.5 500.1 168.6 501 167.5 501 c
+56 501 l
+54.9 501 54 500.1 54 499 c
+54 498 l
+54 496.9 54.9 496 56 496 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 19 Tf 0.16 0.49 0.3 rg 85.62 526 Td (8 / 8) Tj ET
+BT /F1 8.5 Tf 0.13 0.15 0.2 rg 78.6 508 Td (recommendations) Tj ET
+191.5 496 m
+291 496 l
+295.42 496 299 499.58 299 504 c
+299 552 l
+299 556.42 295.42 560 291 560 c
+191.5 560 l
+187.08 560 183.5 556.42 183.5 552 c
+183.5 504 l
+183.5 499.58 187.08 496 191.5 496 c
+h
+0.9 0.94 0.92 rg
+0.8 0.83 0.88 RG
+0.8 w
+B
+185.5 496 m
+297 496 l
+298.1 496 299 496.9 299 498 c
+299 499 l
+299 500.1 298.1 501 297 501 c
+185.5 501 l
+184.4 501 183.5 500.1 183.5 499 c
+183.5 498 l
+183.5 496.9 184.4 496 185.5 496 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 19 Tf 0.16 0.49 0.3 rg 204.68 526 Td (20 / 20) Tj ET
+BT /F1 8.5 Tf 0.13 0.15 0.2 rg 212.52 508 Td (tests passing) Tj ET
+321 496 m
+420.5 496 l
+424.92 496 428.5 499.58 428.5 504 c
+428.5 552 l
+428.5 556.42 424.92 560 420.5 560 c
+321 560 l
+316.58 560 313 556.42 313 552 c
+313 504 l
+313 499.58 316.58 496 321 496 c
+h
+0.9 0.94 0.92 rg
+0.8 0.83 0.88 RG
+0.8 w
+B
+315 496 m
+426.5 496 l
+427.6 496 428.5 496.9 428.5 498 c
+428.5 499 l
+428.5 500.1 427.6 501 426.5 501 c
+315 501 l
+313.9 501 313 500.1 313 499 c
+313 498 l
+313 496.9 313.9 496 315 496 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 19 Tf 0.16 0.49 0.3 rg 334.18 526 Td (16 / 16) Tj ET
+BT /F1 8.5 Tf 0.13 0.15 0.2 rg 348.65 508 Td (CLI checks) Tj ET
+450.5 496 m
+550 496 l
+554.42 496 558 499.58 558 504 c
+558 552 l
+558 556.42 554.42 560 550 560 c
+450.5 560 l
+446.08 560 442.5 556.42 442.5 552 c
+442.5 504 l
+442.5 499.58 446.08 496 450.5 496 c
+h
+0.89 0.9 0.92 rg
+0.8 0.83 0.88 RG
+0.8 w
+B
+444.5 496 m
+556 496 l
+557.1 496 558 496.9 558 498 c
+558 499 l
+558 500.1 557.1 501 556 501 c
+444.5 501 l
+443.4 501 442.5 500.1 442.5 499 c
+442.5 498 l
+442.5 496.9 443.4 496 444.5 496 c
+h
+0.1 0.2 0.34 rg
+f
+BT /F2 19 Tf 0.1 0.2 0.34 rg 495.02 526 Td (0) Tj ET
+BT /F1 8.5 Tf 0.13 0.15 0.2 rg 475.94 508 Td (regressions) Tj ET
+BT /F2 13 Tf 0.13 0.15 0.2 rg 54 470 Td (Scope) Tj ET
+BT /F1 10 Tf 0.42 0.46 0.53 rg 54 450 Td (Improve efficiency, reduce false positives and lower hallucination risk, then smoke-test the) Tj ET
+BT /F1 10 Tf 0.42 0.46 0.53 rg 54 436 Td (harness and report the results. Every change preserves the evidence-first, zero-dependency,) Tj ET
+BT /F1 10 Tf 0.42 0.46 0.53 rg 54 422 Td (offline-by-default design.) Tj ET
+60 360 m
+552 360 l
+555.31 360 558 362.69 558 366 c
+558 384 l
+558 387.31 555.31 390 552 390 c
+60 390 l
+56.69 390 54 387.31 54 384 c
+54 366 l
+54 362.69 56.69 360 60 360 c
+h
+0.88 0.93 0.9 rg
+0.8 0.83 0.88 RG
+0.7 w
+B
+BT /F2 10.5 Tf 0.06 0.3 0.18 rg 132.75 378 Td (Status: ALL 8 RECOMMENDATIONS IMPLEMENTED, TESTED & VERIFIED) Tj ET
+BT /F1 9.5 Tf 0.42 0.46 0.53 rg 54 96 Td (Version 0.1.0) Tj ET
+BT /F2 9.5 Tf 0.13 0.15 0.2 rg 54 80 Td (Author: Sam Gupta) Tj ET
+BT /F1 9.5 Tf 0.42 0.46 0.53 rg 54 64 Td (Generated 2026-06-25) Tj ET
+BT /F1 9.5 Tf 0.42 0.46 0.53 rg 54 48 Td (Mode: offline / deterministic   Target: bundled sample \(code + inventory\)) Tj ET
+0.8 0.83 0.88 RG
+0.6 w
+54 46 m 558 46 l S
+BT /F1 8 Tf 0.42 0.46 0.53 rg 54 34 Td (AI-Argus-Harness  -  Improvements & Smoke-Test Report) Tj ET
+BT /F1 8 Tf 0.42 0.46 0.53 rg 512 34 Td (Page 1) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Length 10047 >>
+stream
+0.8 0.83 0.88 RG
+0.6 w
+54 752 m 558 752 l S
+BT /F2 14.5 Tf 0.13 0.15 0.2 rg 54 735 Td (1.  Recommendations Implemented) Tj ET
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 54 708 Td (All eight improvement areas below were implemented, tested and verified. Each is summarized with the) Tj ET
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 54 695 Td (concrete change.) Tj ET
+60 635 m
+552 635 l
+555.31 635 558 637.69 558 641 c
+558 682 l
+558 685.31 555.31 688 552 688 c
+60 688 l
+56.69 688 54 685.31 54 682 c
+54 641 l
+54 637.69 56.69 635 60 635 c
+h
+0.96 0.97 0.99 rg
+0.8 0.83 0.88 RG
+0.8 w
+B
+56 635 m
+56 635 l
+57.1 635 58 635.9 58 637 c
+58 686 l
+58 687.1 57.1 688 56 688 c
+56 688 l
+54.9 688 54 687.1 54 686 c
+54 637 l
+54 635.9 54.9 635 56 635 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 9.6 Tf 0.13 0.15 0.2 rg 67 671 Td (#1   Content-addressed finding / chain IDs) Tj ET
+509 668 m
+547 668 l
+548.66 668 550 669.34 550 671 c
+550 679 l
+550 680.66 548.66 682 547 682 c
+509 682 l
+507.34 682 506 680.66 506 679 c
+506 671 l
+506 669.34 507.34 668 509 668 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 7.5 Tf 1 1 1 rg 519.75 671.3 Td (DONE) Tj ET
+BT /F1 8.6 Tf 0.42 0.46 0.53 rg 67 657 Td (finding_id and chain_id are now SHA-derived from stable content \(asset + category + title + identity path) Tj ET
+BT /F1 8.6 Tf 0.42 0.46 0.53 rg 67 646.5 Td (+ primary evidence\), enabling diffs, suppressions and idempotent ticket export.) Tj ET
+60 574 m
+552 574 l
+555.31 574 558 576.69 558 580 c
+558 621 l
+558 624.31 555.31 627 552 627 c
+60 627 l
+56.69 627 54 624.31 54 621 c
+54 580 l
+54 576.69 56.69 574 60 574 c
+h
+0.96 0.97 0.99 rg
+0.8 0.83 0.88 RG
+0.8 w
+B
+56 574 m
+56 574 l
+57.1 574 58 574.9 58 576 c
+58 625 l
+58 626.1 57.1 627 56 627 c
+56 627 l
+54.9 627 54 626.1 54 625 c
+54 576 l
+54 574.9 54.9 574 56 574 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 9.6 Tf 0.13 0.15 0.2 rg 67 610 Td (#2   Thread-safe + deterministic evidence) Tj ET
+509 607 m
+547 607 l
+548.66 607 550 608.34 550 610 c
+550 618 l
+550 619.66 548.66 621 547 621 c
+509 621 l
+507.34 621 506 619.66 506 618 c
+506 610 l
+506 608.34 507.34 607 509 607 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 7.5 Tf 1 1 1 rg 519.75 610.3 Td (DONE) Tj ET
+BT /F1 8.6 Tf 0.42 0.46 0.53 rg 67 596 Td (EvidenceStore and the asset/identity graphs are lock-guarded; evidence refs are content-addressed and) Tj ET
+BT /F1 8.6 Tf 0.42 0.46 0.53 rg 67 585.5 Td (de-duplicated, removing the insertion-order race.) Tj ET
+60 513 m
+552 513 l
+555.31 513 558 515.69 558 519 c
+558 560 l
+558 563.31 555.31 566 552 566 c
+60 566 l
+56.69 566 54 563.31 54 560 c
+54 519 l
+54 515.69 56.69 513 60 513 c
+h
+0.96 0.97 0.99 rg
+0.8 0.83 0.88 RG
+0.8 w
+B
+56 513 m
+56 513 l
+57.1 513 58 513.9 58 515 c
+58 564 l
+58 565.1 57.1 566 56 566 c
+56 566 l
+54.9 566 54 565.1 54 564 c
+54 515 l
+54 513.9 54.9 513 56 513 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 9.6 Tf 0.13 0.15 0.2 rg 67 549 Td (#3   Secrets false-positive reduction) Tj ET
+509 546 m
+547 546 l
+548.66 546 550 547.34 550 549 c
+550 557 l
+550 558.66 548.66 560 547 560 c
+509 560 l
+507.34 560 506 558.66 506 557 c
+506 549 l
+506 547.34 507.34 546 509 546 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 7.5 Tf 1 1 1 rg 519.75 549.3 Td (DONE) Tj ET
+BT /F1 8.6 Tf 0.42 0.46 0.53 rg 67 535 Td (Added Shannon-entropy gating, an anchored placeholder/template denylist, path/extension pruning and) Tj ET
+BT /F1 8.6 Tf 0.42 0.46 0.53 rg 67 524.5 Td (per-secret de-duplication.) Tj ET
+60 452 m
+552 452 l
+555.31 452 558 454.69 558 458 c
+558 499 l
+558 502.31 555.31 505 552 505 c
+60 505 l
+56.69 505 54 502.31 54 499 c
+54 458 l
+54 454.69 56.69 452 60 452 c
+h
+0.96 0.97 0.99 rg
+0.8 0.83 0.88 RG
+0.8 w
+B
+56 452 m
+56 452 l
+57.1 452 58 452.9 58 454 c
+58 503 l
+58 504.1 57.1 505 56 505 c
+56 505 l
+54.9 505 54 504.1 54 503 c
+54 454 l
+54 452.9 54.9 452 56 452 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 9.6 Tf 0.13 0.15 0.2 rg 67 488 Td (#4   Category enum + scoring fixes) Tj ET
+509 485 m
+547 485 l
+548.66 485 550 486.34 550 488 c
+550 496 l
+550 497.66 548.66 499 547 499 c
+509 499 l
+507.34 499 506 497.66 506 496 c
+506 488 l
+506 486.34 507.34 485 509 485 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 7.5 Tf 1 1 1 rg 519.75 488.3 Td (DONE) Tj ET
+BT /F1 8.6 Tf 0.42 0.46 0.53 rg 67 474 Td (Introduced a single-source-of-truth Category enum across all scanners and scoring; removed the dead) Tj ET
+BT /F1 8.6 Tf 0.42 0.46 0.53 rg 67 463.5 Td ('cloud' control-weakness branch and unified the Kubernetes categories.) Tj ET
+60 391 m
+552 391 l
+555.31 391 558 393.69 558 397 c
+558 438 l
+558 441.31 555.31 444 552 444 c
+60 444 l
+56.69 444 54 441.31 54 438 c
+54 397 l
+54 393.69 56.69 391 60 391 c
+h
+0.96 0.97 0.99 rg
+0.8 0.83 0.88 RG
+0.8 w
+B
+56 391 m
+56 391 l
+57.1 391 58 391.9 58 393 c
+58 442 l
+58 443.1 57.1 444 56 444 c
+56 444 l
+54.9 444 54 443.1 54 442 c
+54 393 l
+54 391.9 54.9 391 56 391 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 9.6 Tf 0.13 0.15 0.2 rg 67 427 Td (#5   Decoupled exploitability + gate exemptions) Tj ET
+509 424 m
+547 424 l
+548.66 424 550 425.34 550 427 c
+550 435 l
+550 436.66 548.66 438 547 438 c
+509 438 l
+507.34 438 506 436.66 506 435 c
+506 427 l
+506 425.34 507.34 424 509 424 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 7.5 Tf 1 1 1 rg 519.75 427.3 Td (DONE) Tj ET
+BT /F1 8.6 Tf 0.42 0.46 0.53 rg 67 413 Td (Exploitability is now category-intrinsic \(no severity feedback loop\). Credentials score HIGH; an identity) Tj ET
+BT /F1 8.6 Tf 0.42 0.46 0.53 rg 67 402.5 Td (path is required only for privilege/access categories.) Tj ET
+60 330 m
+552 330 l
+555.31 330 558 332.69 558 336 c
+558 377 l
+558 380.31 555.31 383 552 383 c
+60 383 l
+56.69 383 54 380.31 54 377 c
+54 336 l
+54 332.69 56.69 330 60 330 c
+h
+0.96 0.97 0.99 rg
+0.8 0.83 0.88 RG
+0.8 w
+B
+56 330 m
+56 330 l
+57.1 330 58 330.9 58 332 c
+58 381 l
+58 382.1 57.1 383 56 383 c
+56 383 l
+54.9 383 54 382.1 54 381 c
+54 332 l
+54 330.9 54.9 330 56 330 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 9.6 Tf 0.13 0.15 0.2 rg 67 366 Td (#6   Parallel ports + os.walk pruning) Tj ET
+509 363 m
+547 363 l
+548.66 363 550 364.34 550 366 c
+550 374 l
+550 375.66 548.66 377 547 377 c
+509 377 l
+507.34 377 506 375.66 506 374 c
+506 366 l
+506 364.34 507.34 363 509 363 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 7.5 Tf 1 1 1 rg 519.75 366.3 Td (DONE) Tj ET
+BT /F1 8.6 Tf 0.42 0.46 0.53 rg 67 352 Td (Network port probes run concurrently \(was up to ~22s/host\); the secrets walk prunes skip/noise directories) Tj ET
+BT /F1 8.6 Tf 0.42 0.46 0.53 rg 67 341.5 Td (and filters by extension before reading.) Tj ET
+60 269 m
+552 269 l
+555.31 269 558 271.69 558 275 c
+558 316 l
+558 319.31 555.31 322 552 322 c
+60 322 l
+56.69 322 54 319.31 54 316 c
+54 275 l
+54 271.69 56.69 269 60 269 c
+h
+0.96 0.97 0.99 rg
+0.8 0.83 0.88 RG
+0.8 w
+B
+56 269 m
+56 269 l
+57.1 269 58 269.9 58 271 c
+58 320 l
+58 321.1 57.1 322 56 322 c
+56 322 l
+54.9 322 54 321.1 54 320 c
+54 271 l
+54 269.9 54.9 269 56 269 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 9.6 Tf 0.13 0.15 0.2 rg 67 305 Td (#7   LLM grounding + N-sample voting) Tj ET
+509 302 m
+547 302 l
+548.66 302 550 303.34 550 305 c
+550 313 l
+550 314.66 548.66 316 547 316 c
+509 316 l
+507.34 316 506 314.66 506 313 c
+506 305 l
+506 303.34 507.34 302 509 302 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 7.5 Tf 1 1 1 rg 519.75 305.3 Td (DONE) Tj ET
+BT /F1 8.6 Tf 0.42 0.46 0.53 rg 67 291 Td (Model output is checked for invented entities \(CVEs/IPs/ARNs\) and judged by N-sample majority voting with) Tj ET
+BT /F1 8.6 Tf 0.42 0.46 0.53 rg 67 280.5 Td (a disagreement metric; ungrounded rationales cannot support a finding.) Tj ET
+60 208 m
+552 208 l
+555.31 208 558 210.69 558 214 c
+558 255 l
+558 258.31 555.31 261 552 261 c
+60 261 l
+56.69 261 54 258.31 54 255 c
+54 214 l
+54 210.69 56.69 208 60 208 c
+h
+0.96 0.97 0.99 rg
+0.8 0.83 0.88 RG
+0.8 w
+B
+56 208 m
+56 208 l
+57.1 208 58 208.9 58 210 c
+58 259 l
+58 260.1 57.1 261 56 261 c
+56 261 l
+54.9 261 54 260.1 54 259 c
+54 210 l
+54 208.9 54.9 208 56 208 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 9.6 Tf 0.13 0.15 0.2 rg 67 244 Td (#8   Incremental --diff + suppression store) Tj ET
+509 241 m
+547 241 l
+548.66 241 550 242.34 550 244 c
+550 252 l
+550 253.66 548.66 255 547 255 c
+509 255 l
+507.34 255 506 253.66 506 252 c
+506 244 l
+506 242.34 507.34 241 509 241 c
+h
+0.16 0.49 0.3 rg
+f
+BT /F2 7.5 Tf 1 1 1 rg 519.75 244.3 Td (DONE) Tj ET
+BT /F1 8.6 Tf 0.42 0.46 0.53 rg 67 230 Td (A baseline cache yields new/fixed/unchanged diffs across runs; an auditable suppression store accepts) Tj ET
+BT /F1 8.6 Tf 0.42 0.46 0.53 rg 67 219.5 Td (known risks by id, dedup-key or title with optional expiry.) Tj ET
+0.8 0.83 0.88 RG
+0.6 w
+54 204 m 558 204 l S
+BT /F2 14.5 Tf 0.13 0.15 0.2 rg 54 187 Td (2.  Smoke-Test Results) Tj ET
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 54 160 Td (The harness was exercised end-to-end in the deterministic offline mode against the bundled sample) Tj ET
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 54 147 Td (target \(code path + cloud/identity inventory\).) Tj ET
+58 131.3 m
+58 131.3 l
+58.94 131.3 59.7 132.06 59.7 133 c
+59.7 133 l
+59.7 133.94 58.94 134.7 58 134.7 c
+58 134.7 l
+57.06 134.7 56.3 133.94 56.3 133 c
+56.3 133 l
+56.3 132.06 57.06 131.3 58 131.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 130 Td (16 / 16 CLI commands passed: version, stages, plugins, models, doctor, cost, scan, quick, strict,) Tj ET
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 117 Td (stage-subset, single-scanner, graph, identity, report, evidence, suppressions.) Tj ET
+58 102.3 m
+58 102.3 l
+58.94 102.3 59.7 103.06 59.7 104 c
+59.7 104 l
+59.7 104.94 58.94 105.7 58 105.7 c
+58 105.7 l
+57.06 105.7 56.3 104.94 56.3 104 c
+56.3 104 l
+56.3 103.06 57.06 102.3 58 102.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 101 Td (20 / 20 unit + regression tests passed \(pytest\).) Tj ET
+58 86.3 m
+58 86.3 l
+58.94 86.3 59.7 87.06 59.7 88 c
+59.7 88 l
+59.7 88.94 58.94 89.7 58 89.7 c
+58 89.7 l
+57.06 89.7 56.3 88.94 56.3 88 c
+56.3 88 l
+56.3 87.06 57.06 86.3 58 86.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 85 Td (Offline enterprise scan produced 13 findings, 0 review-queue items, 1 attack-path chain, at $0.00) Tj ET
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 72 Td (cost.) Tj ET
+0.8 0.83 0.88 RG
+0.6 w
+54 46 m 558 46 l S
+BT /F1 8 Tf 0.42 0.46 0.53 rg 54 34 Td (AI-Argus-Harness  -  Improvements & Smoke-Test Report) Tj ET
+BT /F1 8 Tf 0.42 0.46 0.53 rg 512 34 Td (Page 2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Length 10221 >>
+stream
+58 739.3 m
+58 739.3 l
+58.94 739.3 59.7 740.06 59.7 741 c
+59.7 741 l
+59.7 741.94 58.94 742.7 58 742.7 c
+58 742.7 l
+57.06 742.7 56.3 741.94 56.3 741 c
+56.3 741 l
+56.3 740.06 57.06 739.3 58 739.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 738 Td (Promoted-finding categories: data-exposure, identity, kubernetes, kubernetes-rbac, saas, secrets,) Tj ET
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 725 Td (supply-chain.) Tj ET
+0.8 0.83 0.88 RG
+0.6 w
+54 723 m 558 723 l S
+BT /F2 14.5 Tf 0.13 0.15 0.2 rg 54 706 Td (3.  Verification Evidence) Tj ET
+BT /F2 11 Tf 0.1 0.2 0.34 rg 54 677 Td (Determinism & thread-safety \(#1, #2\)) Tj ET
+58 659.3 m
+58 659.3 l
+58.94 659.3 59.7 660.06 59.7 661 c
+59.7 661 l
+59.7 661.94 58.94 662.7 58 662.7 c
+58 662.7 l
+57.06 662.7 56.3 661.94 56.3 661 c
+56.3 661 l
+56.3 660.06 57.06 659.3 58 659.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 658 Td (finding_ids, chain_ids and evidence refs were byte-identical across repeated runs AND across) Tj ET
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 645 Td (worker counts \(1 vs 8\).) Tj ET
+58 630.3 m
+58 630.3 l
+58.94 630.3 59.7 631.06 59.7 632 c
+59.7 632 l
+59.7 632.94 58.94 633.7 58 633.7 c
+58 633.7 l
+57.06 633.7 56.3 632.94 56.3 632 c
+56.3 632 l
+56.3 631.06 57.06 630.3 58 630.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 629 Td (Evidence refs are content-addressed and unique \(no duplicates\).) Tj ET
+BT /F2 11 Tf 0.1 0.2 0.34 rg 54 611 Td (False-positive reduction \(#3, #4\)) Tj ET
+58 593.3 m
+58 593.3 l
+58.94 593.3 59.7 594.06 59.7 595 c
+59.7 595 l
+59.7 595.94 58.94 596.7 58 596.7 c
+58 596.7 l
+57.06 596.7 56.3 595.94 56.3 595 c
+56.3 595 l
+56.3 594.06 57.06 593.3 58 593.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 592 Td (The three real sample secrets are detected while placeholder values \("changeme", "${ENV_TOKEN}"\)) Tj ET
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 579 Td (and test/fixture directories are filtered out.) Tj ET
+58 564.3 m
+58 564.3 l
+58.94 564.3 59.7 565.06 59.7 566 c
+59.7 566 l
+59.7 566.94 58.94 567.7 58 567.7 c
+58 567.7 l
+57.06 567.7 56.3 566.94 56.3 566 c
+56.3 566 l
+56.3 565.06 57.06 564.3 58 564.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 563 Td (A typosquat allowlist suppresses known-legitimate near-name packages.) Tj ET
+BT /F2 11 Tf 0.1 0.2 0.34 rg 54 545 Td (Severity correctness \(#5\)) Tj ET
+58 527.3 m
+58 527.3 l
+58.94 527.3 59.7 528.06 59.7 529 c
+59.7 529 l
+59.7 529.94 58.94 530.7 58 530.7 c
+58 530.7 l
+57.06 530.7 56.3 529.94 56.3 529 c
+56.3 529 l
+56.3 528.06 57.06 527.3 58 527.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 526 Td (Hardcoded credentials are now scored HIGH \(previously MEDIUM\) and are correctly promoted, exempt) Tj ET
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 513 Td (from the identity-path rule.) Tj ET
+BT /F2 11 Tf 0.1 0.2 0.34 rg 54 495 Td (Hallucination guard \(#7\)) Tj ET
+58 477.3 m
+58 477.3 l
+58.94 477.3 59.7 478.06 59.7 479 c
+59.7 479 l
+59.7 479.94 58.94 480.7 58 480.7 c
+58 480.7 l
+57.06 480.7 56.3 479.94 56.3 479 c
+56.3 479 l
+56.3 478.06 57.06 477.3 58 477.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 476 Td (Grounding flags invented entities \(e.g. a fabricated CVE / IP not present in the evidence corpus\).) Tj ET
+58 461.3 m
+58 461.3 l
+58.94 461.3 59.7 462.06 59.7 463 c
+59.7 463 l
+59.7 463.94 58.94 464.7 58 464.7 c
+58 464.7 l
+57.06 464.7 56.3 463.94 56.3 463 c
+56.3 463 l
+56.3 462.06 57.06 461.3 58 461.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 460 Td (The offline provider short-circuits voting to an evidence-bound verdict with zero disagreement.) Tj ET
+BT /F2 11 Tf 0.1 0.2 0.34 rg 54 442 Td (Incremental diff & suppressions \(#8\)) Tj ET
+58 424.3 m
+58 424.3 l
+58.94 424.3 59.7 425.06 59.7 426 c
+59.7 426 l
+59.7 426.94 58.94 427.7 58 427.7 c
+58 427.7 l
+57.06 427.7 56.3 426.94 56.3 426 c
+56.3 426 l
+56.3 425.06 57.06 424.3 58 424.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 423 Td (First --diff run recorded a baseline \(+13 new\); the immediate re-run reported +0 new / 13) Tj ET
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 410 Td (unchanged.) Tj ET
+58 395.3 m
+58 395.3 l
+58.94 395.3 59.7 396.06 59.7 397 c
+59.7 397 l
+59.7 397.94 58.94 398.7 58 398.7 c
+58 398.7 l
+57.06 398.7 56.3 397.94 56.3 397 c
+56.3 397 l
+56.3 396.06 57.06 395.3 58 395.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 394 Td (Suppressing 'Privileged pod' reduced promoted findings 13 -> 12 with suppressed = 1; the rule is) Tj ET
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 381 Td (listed by `argus suppressions`.) Tj ET
+0.8 0.83 0.88 RG
+0.6 w
+54 379 m 558 379 l S
+BT /F2 14.5 Tf 0.13 0.15 0.2 rg 54 362 Td (4.  Files Changed) Tj ET
+58 336.3 m
+58 336.3 l
+58.94 336.3 59.7 337.06 59.7 338 c
+59.7 338 l
+59.7 338.94 58.94 339.7 58 339.7 c
+58 339.7 l
+57.06 339.7 56.3 338.94 56.3 338 c
+56.3 338 l
+56.3 337.06 57.06 336.3 58 336.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 335 Td (models.py - Category enum, content_id\(\) helper, compute_id\(\) for Finding/Chain.) Tj ET
+58 320.3 m
+58 320.3 l
+58.94 320.3 59.7 321.06 59.7 322 c
+59.7 322 l
+59.7 322.94 58.94 323.7 58 323.7 c
+58 323.7 l
+57.06 323.7 56.3 322.94 56.3 322 c
+56.3 322 l
+56.3 321.06 57.06 320.3 58 320.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 319 Td (evidence/store.py - thread-safe, content-addressed, de-duplicating store.) Tj ET
+58 304.3 m
+58 304.3 l
+58.94 304.3 59.7 305.06 59.7 306 c
+59.7 306 l
+59.7 306.94 58.94 307.7 58 307.7 c
+58 307.7 l
+57.06 307.7 56.3 306.94 56.3 306 c
+56.3 306 l
+56.3 305.06 57.06 304.3 58 304.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 303 Td (graph/asset_graph.py, graph/identity_graph.py - lock-guarded mutations.) Tj ET
+58 288.3 m
+58 288.3 l
+58.94 288.3 59.7 289.06 59.7 290 c
+59.7 290 l
+59.7 290.94 58.94 291.7 58 291.7 c
+58 291.7 l
+57.06 291.7 56.3 290.94 56.3 290 c
+56.3 290 l
+56.3 289.06 57.06 288.3 58 288.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 287 Td (scanners/secrets.py - entropy/placeholder/path/extension filters, os.walk pruning.) Tj ET
+58 272.3 m
+58 272.3 l
+58.94 272.3 59.7 273.06 59.7 274 c
+59.7 274 l
+59.7 274.94 58.94 275.7 58 275.7 c
+58 275.7 l
+57.06 275.7 56.3 274.94 56.3 274 c
+56.3 274 l
+56.3 273.06 57.06 272.3 58 272.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 271 Td (scanners/network.py - concurrent port probing.) Tj ET
+58 256.3 m
+58 256.3 l
+58.94 256.3 59.7 257.06 59.7 258 c
+59.7 258 l
+59.7 258.94 58.94 259.7 58 259.7 c
+58 259.7 l
+57.06 259.7 56.3 258.94 56.3 258 c
+56.3 258 l
+56.3 257.06 57.06 256.3 58 256.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 255 Td (scanners/* - migrated every finding to the Category enum; supply_chain allowlist.) Tj ET
+58 240.3 m
+58 240.3 l
+58.94 240.3 59.7 241.06 59.7 242 c
+59.7 242 l
+59.7 242.94 58.94 243.7 58 243.7 c
+58 243.7 l
+57.06 243.7 56.3 242.94 56.3 242 c
+56.3 242 l
+56.3 241.06 57.06 240.3 58 240.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 239 Td (scoring/risk_scoring.py - decoupled exploitability; fixed dead/inconsistent branches.) Tj ET
+58 224.3 m
+58 224.3 l
+58.94 224.3 59.7 225.06 59.7 226 c
+59.7 226 l
+59.7 226.94 58.94 227.7 58 227.7 c
+58 227.7 l
+57.06 227.7 56.3 226.94 56.3 226 c
+56.3 226 l
+56.3 225.06 57.06 224.3 58 224.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 223 Td (reliability/completeness_gate.py - identity-path required only for privilege categories.) Tj ET
+58 208.3 m
+58 208.3 l
+58.94 208.3 59.7 209.06 59.7 210 c
+59.7 210 l
+59.7 210.94 58.94 211.7 58 211.7 c
+58 211.7 l
+57.06 211.7 56.3 210.94 56.3 210 c
+56.3 210 l
+56.3 209.06 57.06 208.3 58 208.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 207 Td (reliability/adversarial_reviewer.py - grounded N-sample voting integration.) Tj ET
+58 192.3 m
+58 192.3 l
+58.94 192.3 59.7 193.06 59.7 194 c
+59.7 194 l
+59.7 194.94 58.94 195.7 58 195.7 c
+58 195.7 l
+57.06 195.7 56.3 194.94 56.3 194 c
+56.3 194 l
+56.3 193.06 57.06 192.3 58 192.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 191 Td (reliability/grounding.py, reliability/voting.py - NEW anti-hallucination modules.) Tj ET
+58 176.3 m
+58 176.3 l
+58.94 176.3 59.7 177.06 59.7 178 c
+59.7 178 l
+59.7 178.94 58.94 179.7 58 179.7 c
+58 179.7 l
+57.06 179.7 56.3 178.94 56.3 178 c
+56.3 178 l
+56.3 177.06 57.06 176.3 58 176.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 175 Td (core/suppressions.py, core/cache.py - NEW suppression store + baseline/diff.) Tj ET
+58 160.3 m
+58 160.3 l
+58.94 160.3 59.7 161.06 59.7 162 c
+59.7 162 l
+59.7 162.94 58.94 163.7 58 163.7 c
+58 163.7 l
+57.06 163.7 56.3 162.94 56.3 162 c
+56.3 162 l
+56.3 161.06 57.06 160.3 58 160.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 159 Td (core/orchestrator.py - wired IDs, suppressions and --diff; new RunResult fields.) Tj ET
+58 144.3 m
+58 144.3 l
+58.94 144.3 59.7 145.06 59.7 146 c
+59.7 146 l
+59.7 146.94 58.94 147.7 58 147.7 c
+58 147.7 l
+57.06 147.7 56.3 146.94 56.3 146 c
+56.3 146 l
+56.3 145.06 57.06 144.3 58 144.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 143 Td (config.py, reporting/json_report.py, cli.py - diff flag, suppress commands, output.) Tj ET
+58 128.3 m
+58 128.3 l
+58.94 128.3 59.7 129.06 59.7 130 c
+59.7 130 l
+59.7 130.94 58.94 131.7 58 131.7 c
+58 131.7 l
+57.06 131.7 56.3 130.94 56.3 130 c
+56.3 130 l
+56.3 129.06 57.06 128.3 58 128.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 127 Td (tests/test_pipeline.py - updated gate tests + 10 new regression tests.) Tj ET
+0.8 0.83 0.88 RG
+0.6 w
+54 125 m 558 125 l S
+BT /F2 14.5 Tf 0.13 0.15 0.2 rg 54 108 Td (5.  Notes & Future Work) Tj ET
+58 82.3 m
+58 82.3 l
+58.94 82.3 59.7 83.06 59.7 84 c
+59.7 84 l
+59.7 84.94 58.94 85.7 58 85.7 c
+58 85.7 l
+57.06 85.7 56.3 84.94 56.3 84 c
+56.3 84 l
+56.3 83.06 57.06 82.3 58 82.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 81 Td (A full result cache \(skip-recompute\) and real provider SDK wiring remain future work; the) Tj ET
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 68 Td (deterministic offline path stays the default.) Tj ET
+0.8 0.83 0.88 RG
+0.6 w
+54 46 m 558 46 l S
+BT /F1 8 Tf 0.42 0.46 0.53 rg 54 34 Td (AI-Argus-Harness  -  Improvements & Smoke-Test Report) Tj ET
+BT /F1 8 Tf 0.42 0.46 0.53 rg 512 34 Td (Page 3) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Length 895 >>
+stream
+58 739.3 m
+58 739.3 l
+58.94 739.3 59.7 740.06 59.7 741 c
+59.7 741 l
+59.7 741.94 58.94 742.7 58 742.7 c
+58 742.7 l
+57.06 742.7 56.3 741.94 56.3 741 c
+56.3 741 l
+56.3 740.06 57.06 739.3 58 739.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 738 Td (Stealth pacing delays and SARIF location-URI refinement are tracked as follow-ups.) Tj ET
+58 723.3 m
+58 723.3 l
+58.94 723.3 59.7 724.06 59.7 725 c
+59.7 725 l
+59.7 725.94 58.94 726.7 58 726.7 c
+58 726.7 l
+57.06 726.7 56.3 725.94 56.3 725 c
+56.3 725 l
+56.3 724.06 57.06 723.3 58 723.3 c
+h
+0.42 0.46 0.53 rg
+f
+BT /F1 9.5 Tf 0.13 0.15 0.2 rg 68 722 Td (Reproduce: `python3 -m pytest` and `python3 docs/generate_improvements_report.py`.) Tj ET
+0.8 0.83 0.88 RG
+0.6 w
+54 46 m 558 46 l S
+BT /F1 8 Tf 0.42 0.46 0.53 rg 54 34 Td (AI-Argus-Harness  -  Improvements & Smoke-Test Report) Tj ET
+BT /F1 8 Tf 0.42 0.46 0.53 rg 512 34 Td (Page 4) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000143 00000 n 
+0000000213 00000 n 
+0000000288 00000 n 
+0000000447 00000 n 
+0000004386 00000 n 
+0000014486 00000 n 
+0000024760 00000 n 
+0000025706 00000 n 
+0000025843 00000 n 
+0000025980 00000 n 
+0000026117 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R /Info 5 0 R >>
+startxref
+26254
+%%EOF

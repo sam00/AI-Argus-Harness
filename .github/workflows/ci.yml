@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: test (py${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install (editable, with dev + yaml extras)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[yaml,dev]"
+
+      - name: Unit + regression tests
+        run: python -m pytest -q
+
+      - name: CLI smoke test (offline, deterministic)
+        run: |
+          argus version
+          argus doctor
+          argus stages
+          argus scan ./examples/demo-target --offline --no-auth-scan \
+            --path ./examples/demo-target --inventory examples/inventory.json
+
+      - name: Regenerate design PDF (stdlib only)
+        run: python3 docs/generate_design_pdf.py

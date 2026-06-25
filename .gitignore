@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+argus-runs/
+.pytest_cache/
+.DS_Store
+docs/*.svg.png

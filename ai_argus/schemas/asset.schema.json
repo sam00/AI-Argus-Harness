@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/sam00/ai-argus-harness/schemas/asset.schema.json",
+  "title": "Asset",
+  "type": "object",
+  "required": ["id", "type", "name"],
+  "properties": {
+    "id": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["domain", "cloud", "endpoint", "k8s", "app", "service", "dependency", "saas", "network"]
+    },
+    "name": { "type": "string" },
+    "environment": { "type": "string", "enum": ["prod", "staging", "dev", "unknown"] },
+    "owner": { "type": "string" },
+    "attributes": { "type": "object" },
+    "tags": { "type": "array", "items": { "type": "string" } }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/sam00/ai-argus-harness/schemas/finding.schema.json",
+  "title": "Finding",
+  "type": "object",
+  "required": ["finding_id", "asset", "evidence", "identity_path", "impact", "confidence", "remediation", "owner"],
+  "properties": {
+    "finding_id": { "type": "string" },
+    "title": { "type": "string" },
+    "category": { "type": "string" },
+    "scanner": { "type": "string" },
+    "stage": { "type": "string" },
+    "severity": { "type": "string", "enum": ["info", "low", "medium", "high", "critical"] },
+    "confidence": { "type": "string", "enum": ["low", "medium", "high"] },
+    "risk_score": { "type": "number" },
+    "asset": { "$ref": "asset.schema.json" },
+    "evidence": { "type": "array", "items": { "$ref": "evidence.schema.json" }, "minItems": 1 },
+    "identity_path": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["principal", "permission", "target", "relationship"],
+        "properties": {
+          "principal": { "type": "string" },
+          "permission": { "type": "string" },
+          "target": { "type": "string" },
+          "relationship": {
+            "type": "string",
+            "enum": ["can-read", "can-write", "can-admin", "can-assume", "can-deploy"]
+          }
+        }
+      }
+    },
+    "impact": {
+      "type": "object",
+      "properties": {
+        "business": { "type": "string" },
+        "technical": { "type": "string" },
+        "blast_radius": { "type": "string" }
+      }
+    },
+    "remediation": {
+      "type": "object",
+      "properties": {
+        "summary": { "type": "string" },
+        "steps": { "type": "array", "items": { "type": "string" } },
+        "priority": { "type": "string", "enum": ["low", "medium", "high", "critical"] }
+      }
+    },
+    "owner": {
+      "type": "object",
+      "properties": {
+        "team": { "type": "string" },
+        "service": { "type": "string" },
+        "contact": { "type": "string" }
+      }
+    }
+  }
+}

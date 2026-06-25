@@ -1,0 +1,83 @@
+{
+  "finding_id": "FINDING-98dfd6e005",
+  "title": "Externally assumable admin role: BreakGlassAdmin",
+  "category": "identity",
+  "scanner": "aws",
+  "stage": "S4",
+  "severity": "critical",
+  "confidence": "high",
+  "risk_score": 17.5,
+  "score_breakdown": {
+    "exposure": 3.0,
+    "privilege": 3.0,
+    "exploitability": 2.5,
+    "identity_path_strength": 3.0,
+    "data_sensitivity": 0.0,
+    "business_criticality": 0.5,
+    "chainability": 0.0,
+    "detection_gap": 2.0,
+    "control_weakness": 1.5,
+    "confidence": 2.0,
+    "compensating_controls": -0.0
+  },
+  "asset": {
+    "id": "asset-449bcf02f890",
+    "type": "cloud",
+    "name": "BreakGlassAdmin",
+    "environment": "unknown",
+    "owner": "",
+    "attributes": {
+      "account": "123456789012",
+      "service": "iam"
+    },
+    "tags": []
+  },
+  "evidence": [
+    {
+      "source": "cloud-api",
+      "detail": "Role BreakGlassAdmin is admin and trusts external accounts.",
+      "confidence": "high",
+      "timestamp": "2026-06-25T19:41:06Z",
+      "raw_ref": "ev-bf21c71690bc"
+    }
+  ],
+  "identity_path": [
+    {
+      "principal": "external-account",
+      "permission": "sts:AssumeRole",
+      "target": "BreakGlassAdmin",
+      "relationship": "can-assume"
+    },
+    {
+      "principal": "BreakGlassAdmin",
+      "permission": "*",
+      "target": "account",
+      "relationship": "can-admin"
+    }
+  ],
+  "impact": {
+    "business": "Full account compromise via cross-account trust.",
+    "technical": "Privileged role assumable from outside the org.",
+    "blast_radius": "entire AWS account"
+  },
+  "remediation": {
+    "summary": "Restrict trust policy to known principals.",
+    "steps": [
+      "Scope AssumeRole trust",
+      "Add external-id / MFA",
+      "Reduce role permissions"
+    ],
+    "priority": "critical"
+  },
+  "owner": {
+    "team": "Cloud Security",
+    "service": "BreakGlassAdmin",
+    "contact": ""
+  },
+  "detection_gap": true,
+  "chain_ids": [],
+  "references": [],
+  "dedup_key": "be9496f3879fb13e",
+  "review_status": "auto",
+  "notes": []
+}

@@ -1,0 +1,44 @@
+{
+  "aws": {
+    "account_id": "123456789012",
+    "cloudtrail_enabled": false,
+    "s3_buckets": [
+      { "name": "prod-customer-exports", "public": true, "reader_role": "s3-public-reader" },
+      { "name": "internal-logs", "public": false }
+    ],
+    "iam_roles": [
+      { "name": "BreakGlassAdmin", "admin": true, "assumable_by_external": true }
+    ]
+  },
+  "gcp": {
+    "project_id": "acme-prod",
+    "buckets": [
+      { "name": "acme-public-assets", "public": true }
+    ],
+    "service_accounts": [
+      { "email": "ci-deployer@acme-prod.iam.gserviceaccount.com", "owner_role": true }
+    ]
+  },
+  "kubernetes": {
+    "cluster": "prod-eks",
+    "rolebindings": [
+      { "namespace": "payments", "subject": "default", "subject_kind": "ServiceAccount", "role": "cluster-admin" }
+    ],
+    "pods": [
+      { "namespace": "payments", "name": "card-processor-7f", "privileged": true }
+    ]
+  },
+  "saas": {
+    "tenant": "acme.okta.com",
+    "oauth_apps": [
+      { "name": "LegacyReportingApp", "provider": "okta", "broad_scope": true, "scopes": ["admin", "users:read"] }
+    ]
+  },
+  "data_stores": [
+    { "name": "prod-postgres-main", "engine": "postgres", "public": true, "data_classes": ["pii", "pci"], "logging": false }
+  ],
+  "endpoints": [
+    { "host": "api.acme.com", "route": "/actuator/env", "auth": false },
+    { "host": "api.acme.com", "route": "/v1/users", "auth": true }
+  ]
+}

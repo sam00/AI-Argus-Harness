@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/sam00/ai-argus-harness/schemas/chain.schema.json",
+  "title": "Chain",
+  "type": "object",
+  "required": ["chain_id", "finding_ids"],
+  "properties": {
+    "chain_id": { "type": "string" },
+    "title": { "type": "string" },
+    "finding_ids": { "type": "array", "items": { "type": "string" } },
+    "assets": { "type": "array", "items": { "type": "string" } },
+    "identities": { "type": "array", "items": { "type": "string" } },
+    "narrative": { "type": "string" },
+    "severity": { "type": "string", "enum": ["info", "low", "medium", "high", "critical"] },
+    "score": { "type": "number" }
+  }
+}

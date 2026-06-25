@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" font-family="SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">
+  <defs>
+    <style>
+      .t  { font-size:15px; }
+      .dim{ fill:#7d8aa0; }
+      .fg { fill:#d6deea; }
+      .wh { fill:#ffffff; font-weight:700; }
+      .grn{ fill:#5ef0a0; }
+      .tl { fill:#3fd0c9; }
+      .crit{ fill:#ff6b61; font-weight:700; }
+      .high{ fill:#ffb454; font-weight:700; }
+      .num{ fill:#8fa6c0; }
+    </style>
+  </defs>
+
+  <!-- window -->
+  <rect x="8" y="8" width="884" height="884" rx="12" fill="#0c1320" stroke="#222c3d"/>
+  <rect x="8" y="8" width="884" height="36" rx="12" fill="#1b2433"/>
+  <rect x="8" y="30" width="884" height="14" fill="#1b2433"/>
+  <circle cx="32" cy="26" r="6" fill="#ff5f56"/>
+  <circle cx="52" cy="26" r="6" fill="#ffbd2e"/>
+  <circle cx="72" cy="26" r="6" fill="#27c93f"/>
+  <text x="450" y="31" text-anchor="middle" class="t dim">argus — security scan</text>
+
+  <!-- body -->
+  <g class="t">
+    <text x="28" y="78"><tspan class="grn">$</tspan> <tspan class="fg">argus scan ./examples/demo-target --offline --no-auth-scan</tspan></text>
+    <text x="28" y="102" class="dim">Auth mode: non-authenticated (no key required).</text>
+
+    <text x="28" y="138" class="wh">AI-Argus-Harness — scan complete</text>
+    <text x="28" y="160" class="fg">  run id    : <tspan class="tl">run-19c66f3d3b</tspan></text>
+    <text x="28" y="182" class="fg">  profile   : enterprise  cost=offline  stealth=passive</text>
+    <text x="28" y="204" class="fg">  assets    : 14   identities: 5</text>
+    <text x="28" y="226" class="fg">  findings  : <tspan class="wh">13</tspan>   review-queue: 0   suppressed: 0   chains: 1</text>
+    <text x="28" y="248" class="fg">  severity  : <tspan class="crit">critical:4</tspan>  <tspan class="high">high:7</tspan>  <tspan class="dim">low:2</tspan></text>
+
+    <text x="28" y="288"><tspan class="crit">  [CRITICAL]</tspan> <tspan class="fg">Externally assumable admin role: BreakGlassAdmin</tspan>   <tspan class="num">17.5</tspan></text>
+    <text x="28" y="310"><tspan class="crit">  [CRITICAL]</tspan> <tspan class="fg">Publicly exposed datastore: prod-postgres-main</tspan>     <tspan class="num">16.5</tspan></text>
+    <text x="28" y="332"><tspan class="crit">  [CRITICAL]</tspan> <tspan class="fg">Public storage bucket: prod-customer-exports</tspan>       <tspan class="num">15.5</tspan></text>
+    <text x="28" y="354"><tspan class="high">  [HIGH]    </tspan> <tspan class="fg">Service account cluster-admin: payments:default</tspan>    <tspan class="num">12.5</tspan></text>
+    <text x="28" y="376"><tspan class="high">  [HIGH]    </tspan> <tspan class="fg">Privileged pod: payments/card-processor-7f</tspan>         <tspan class="num">12.0</tspan></text>
+    <text x="28" y="398"><tspan class="high">  [HIGH]    </tspan> <tspan class="fg">AWS Access Key hardcoded in source</tspan>                  <tspan class="num">9.5</tspan></text>
+    <text x="28" y="420" class="dim">  ... and 7 more</text>
+
+    <text x="28" y="458" class="fg">Reports: <tspan class="tl">report.json · report.sarif · report.md · executive.md · tickets.json</tspan></text>
+
+    <text x="28" y="500"><tspan class="grn">$</tspan> <tspan class="fg">argus explain FINDING-98dfd6e005</tspan></text>
+    <text x="28" y="524" class="fg">  asset      : BreakGlassAdmin <tspan class="dim">(iam · account 123456789012)</tspan></text>
+    <text x="28" y="546" class="fg">  evidence   : role is admin &amp; trusts external accounts <tspan class="dim">[cloud-api]</tspan></text>
+    <text x="28" y="568" class="fg">  identity   : <tspan class="high">external:*</tspan> → sts:AssumeRole → <tspan class="crit">BreakGlassAdmin</tspan></text>
+    <text x="28" y="590" class="fg">  impact     : full account takeover via cross-account assume-role</text>
+    <text x="28" y="612" class="fg">  remediation: restrict trust policy; require ExternalId + MFA</text>
+    <text x="28" y="634" class="fg">  owner      : cloud-platform   confidence: <tspan class="grn">high</tspan></text>
+    <text x="28" y="668" class="fg">Verdict: <tspan class="grn">evidence-backed</tspan> · grounded · promoted to report</text>
+    <text x="28" y="712"><tspan class="grn">$</tspan> <tspan class="grn">▌</tspan></text>
+  </g>
+</svg>

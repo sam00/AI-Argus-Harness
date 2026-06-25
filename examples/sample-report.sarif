@@ -1,0 +1,414 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "AI-Argus-Harness",
+          "version": "0.1.0",
+          "informationUri": "https://github.com/sam00/ai-argus-harness",
+          "rules": [
+            {
+              "id": "identity",
+              "name": "Identity",
+              "shortDescription": {
+                "text": "AI-Argus identity finding"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "data-exposure",
+              "name": "Data Exposure",
+              "shortDescription": {
+                "text": "AI-Argus data-exposure finding"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "kubernetes-rbac",
+              "name": "Kubernetes Rbac",
+              "shortDescription": {
+                "text": "AI-Argus kubernetes-rbac finding"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "kubernetes",
+              "name": "Kubernetes",
+              "shortDescription": {
+                "text": "AI-Argus kubernetes finding"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "saas",
+              "name": "Saas",
+              "shortDescription": {
+                "text": "AI-Argus saas finding"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "secrets",
+              "name": "Secrets",
+              "shortDescription": {
+                "text": "AI-Argus secrets finding"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              }
+            },
+            {
+              "id": "supply-chain",
+              "name": "Supply Chain",
+              "shortDescription": {
+                "text": "AI-Argus supply-chain finding"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "identity",
+          "level": "error",
+          "message": {
+            "text": "Externally assumable admin role: BreakGlassAdmin \u2014 Privileged role assumable from outside the org."
+          },
+          "properties": {
+            "finding_id": "FINDING-98dfd6e005",
+            "severity": "critical",
+            "confidence": "high",
+            "risk_score": 17.5,
+            "asset": "BreakGlassAdmin",
+            "owner": "Cloud Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "BreakGlassAdmin"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "data-exposure",
+          "level": "error",
+          "message": {
+            "text": "Publicly exposed datastore: prod-postgres-main \u2014 postgres reachable from internet."
+          },
+          "properties": {
+            "finding_id": "FINDING-158773ac99",
+            "severity": "critical",
+            "confidence": "high",
+            "risk_score": 16.5,
+            "asset": "prod-postgres-main",
+            "owner": "Data Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "prod-postgres-main"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "data-exposure",
+          "level": "error",
+          "message": {
+            "text": "Publicly accessible storage bucket: acme-public-assets \u2014 Object storage readable by anonymous principals."
+          },
+          "properties": {
+            "finding_id": "FINDING-d83fa19551",
+            "severity": "critical",
+            "confidence": "high",
+            "risk_score": 15.5,
+            "asset": "acme-public-assets",
+            "owner": "Cloud Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "acme-public-assets"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "data-exposure",
+          "level": "error",
+          "message": {
+            "text": "Publicly accessible storage bucket: prod-customer-exports \u2014 Object storage readable by anonymous principals."
+          },
+          "properties": {
+            "finding_id": "FINDING-147afdcd76",
+            "severity": "critical",
+            "confidence": "high",
+            "risk_score": 15.5,
+            "asset": "prod-customer-exports",
+            "owner": "Cloud Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "prod-customer-exports"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "kubernetes-rbac",
+          "level": "error",
+          "message": {
+            "text": "Service account with cluster-admin: payments:default \u2014 Excessive RBAC binding to cluster-admin."
+          },
+          "properties": {
+            "finding_id": "FINDING-018b128af5",
+            "severity": "high",
+            "confidence": "high",
+            "risk_score": 12.5,
+            "asset": "prod-eks/payments/default",
+            "owner": "Platform Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "prod-eks/payments/default"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "kubernetes",
+          "level": "error",
+          "message": {
+            "text": "Privileged pod: payments/card-processor-7f \u2014 privileged: true grants host capabilities."
+          },
+          "properties": {
+            "finding_id": "FINDING-6993e63b10",
+            "severity": "high",
+            "confidence": "high",
+            "risk_score": 12.0,
+            "asset": "prod-eks/payments/card-processor-7f",
+            "owner": "Platform Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "prod-eks/payments/card-processor-7f"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "identity",
+          "level": "error",
+          "message": {
+            "text": "Over-privileged service account: ci-deployer@acme-prod.iam.gserviceaccount.com \u2014 roles/owner violates least privilege."
+          },
+          "properties": {
+            "finding_id": "FINDING-a78485186b",
+            "severity": "high",
+            "confidence": "high",
+            "risk_score": 11.5,
+            "asset": "ci-deployer@acme-prod.iam.gserviceaccount.com",
+            "owner": "Cloud Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ci-deployer@acme-prod.iam.gserviceaccount.com"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "saas",
+          "level": "error",
+          "message": {
+            "text": "Over-scoped OAuth integration: LegacyReportingApp \u2014 OAuth app holds excessive scopes."
+          },
+          "properties": {
+            "finding_id": "FINDING-44b37e0ab1",
+            "severity": "high",
+            "confidence": "high",
+            "risk_score": 11.0,
+            "asset": "LegacyReportingApp",
+            "owner": "Identity Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "LegacyReportingApp"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "secrets",
+          "level": "error",
+          "message": {
+            "text": "AWS Access Key hardcoded in source \u2014 AWS Access Key committed to source at config.py:5."
+          },
+          "properties": {
+            "finding_id": "FINDING-c4d7a8ae35",
+            "severity": "high",
+            "confidence": "high",
+            "risk_score": 9.5,
+            "asset": "examples/demo-target",
+            "owner": "Application Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "examples/demo-target"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "secrets",
+          "level": "error",
+          "message": {
+            "text": "Generic API Key hardcoded in source \u2014 Generic API Key committed to source at config.py:9."
+          },
+          "properties": {
+            "finding_id": "FINDING-b7c24685a1",
+            "severity": "high",
+            "confidence": "high",
+            "risk_score": 9.5,
+            "asset": "examples/demo-target",
+            "owner": "Application Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "examples/demo-target"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "secrets",
+          "level": "error",
+          "message": {
+            "text": "Password Assignment hardcoded in source \u2014 Password Assignment committed to source at config.py:10."
+          },
+          "properties": {
+            "finding_id": "FINDING-0e540b5654",
+            "severity": "high",
+            "confidence": "high",
+            "risk_score": 9.5,
+            "asset": "examples/demo-target",
+            "owner": "Application Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "examples/demo-target"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "supply-chain",
+          "level": "note",
+          "message": {
+            "text": "Unpinned dependency: flask \u2014 flask resolves to a floating version."
+          },
+          "properties": {
+            "finding_id": "FINDING-a81411b688",
+            "severity": "low",
+            "confidence": "high",
+            "risk_score": 4.0,
+            "asset": "flask",
+            "owner": "Application Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "flask"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "supply-chain",
+          "level": "note",
+          "message": {
+            "text": "Possible typosquat dependency: reqests \u2014 reqests may impersonate 'requests'."
+          },
+          "properties": {
+            "finding_id": "FINDING-7d3dc79de2",
+            "severity": "low",
+            "confidence": "medium",
+            "risk_score": 3.0,
+            "asset": "reqests",
+            "owner": "Application Security",
+            "review_status": "auto"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "reqests"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

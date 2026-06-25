@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#0a7873"/>
+    </marker>
+    <style>
+      .title  { fill:#ffffff; font-size:22px; font-weight:700; }
+      .sub    { fill:#cdd7e3; font-size:12px; }
+      .stageT { fill:#102a44; font-size:13px; font-weight:700; }
+      .stageS { fill:#5b6b7d; font-size:10.5px; }
+      .band   { fill:#0a7873; font-size:12px; font-weight:700; }
+      .io     { fill:#102a44; font-size:11px; }
+      .ioT    { fill:#102a44; font-size:12px; font-weight:700; }
+      .note   { fill:#5b6b7d; font-size:11px; }
+    </style>
+  </defs>
+
+  <!-- header -->
+  <rect x="0" y="0" width="960" height="74" fill="#102a44"/>
+  <rect x="0" y="74" width="960" height="4" fill="#0a7873"/>
+  <text x="28" y="36" class="title">AI-Argus-Harness</text>
+  <text x="28" y="58" class="sub">Evidence-first, identity-aware security assessment pipeline — AI interprets evidence, never creates it.</text>
+
+  <!-- inputs -->
+  <text x="28" y="110" class="ioT">Targets / Inputs</text>
+  <rect x="20" y="120" width="150" height="150" rx="10" fill="#f3f6fa" stroke="#d7dee8"/>
+  <text x="34" y="146" class="io">• domain / CIDR</text>
+  <text x="34" y="168" class="io">• code path</text>
+  <text x="34" y="190" class="io">• inventory.json</text>
+  <text x="34" y="212" class="io">  (cloud / identity</text>
+  <text x="34" y="228" class="io">   / k8s / saas)</text>
+  <text x="34" y="252" class="io">• credentials (refs)</text>
+
+  <!-- S0 preflight -->
+  <rect x="190" y="120" width="120" height="150" rx="10" fill="#eaf3f2" stroke="#0a7873"/>
+  <text x="204" y="146" class="stageT">S0</text>
+  <text x="204" y="166" class="stageT">Credential</text>
+  <text x="204" y="183" class="stageT">Preflight</text>
+  <text x="204" y="206" class="stageS">auth vs non-auth;</text>
+  <text x="204" y="221" class="stageS">discover keys</text>
+  <text x="204" y="236" class="stageS">(refs only,</text>
+  <text x="204" y="251" class="stageS">never values)</text>
+
+  <!-- pipeline stages -->
+  <!-- Discovery -->
+  <rect x="330" y="120" width="120" height="150" rx="10" fill="#f3f6fa" stroke="#d7dee8"/>
+  <text x="344" y="146" class="stageT">Discovery</text>
+  <text x="344" y="168" class="stageS">S1 attack surface</text>
+  <text x="344" y="184" class="stageS">DNS/TLS/ports</text>
+  <text x="344" y="200" class="stageS">cloud · k8s · app</text>
+  <text x="344" y="216" class="stageS">secrets · supply</text>
+  <text x="344" y="232" class="stageS">chain · saas · data</text>
+
+  <!-- Identity -->
+  <rect x="470" y="120" width="120" height="150" rx="10" fill="#f3f6fa" stroke="#d7dee8"/>
+  <text x="484" y="146" class="stageT">Identity</text>
+  <text x="484" y="168" class="stageS">S1.5 access graph</text>
+  <text x="484" y="184" class="stageS">users · roles</text>
+  <text x="484" y="200" class="stageS">service accts</text>
+  <text x="484" y="216" class="stageS">privileged &amp;</text>
+  <text x="484" y="232" class="stageS">blind-spot paths</text>
+
+  <!-- Verification -->
+  <rect x="610" y="120" width="120" height="150" rx="10" fill="#f3f6fa" stroke="#d7dee8"/>
+  <text x="624" y="146" class="stageT">Verification</text>
+  <text x="624" y="168" class="stageS">S2–S5 evidence</text>
+  <text x="624" y="184" class="stageS">claim verifier</text>
+  <text x="624" y="200" class="stageS">grounding +</text>
+  <text x="624" y="216" class="stageS">N-sample voting</text>
+  <text x="624" y="232" class="stageS">(offline default)</text>
+
+  <!-- Risk Intelligence -->
+  <rect x="750" y="120" width="120" height="150" rx="10" fill="#f3f6fa" stroke="#d7dee8"/>
+  <text x="764" y="146" class="stageT">Risk Intel</text>
+  <text x="764" y="168" class="stageS">S6 dedup</text>
+  <text x="764" y="184" class="stageS">attack-path</text>
+  <text x="764" y="200" class="stageS">chaining</text>
+  <text x="764" y="216" class="stageS">deterministic</text>
+  <text x="764" y="232" class="stageS">scoring</text>
+
+  <!-- arrows between stages -->
+  <line x1="170" y1="195" x2="188" y2="195" stroke="#0a7873" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="310" y1="195" x2="328" y2="195" stroke="#0a7873" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="450" y1="195" x2="468" y2="195" stroke="#0a7873" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="590" y1="195" x2="608" y2="195" stroke="#0a7873" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="730" y1="195" x2="748" y2="195" stroke="#0a7873" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Reliability gate band -->
+  <rect x="190" y="300" width="680" height="52" rx="10" fill="#fff7e6" stroke="#d9a441"/>
+  <text x="206" y="324" class="band" fill="#9a6b12">Reliability gate (S5.5)</text>
+  <text x="206" y="342" class="note">No evidence → no finding · no identity path → no high severity · no owner → no promotion · low confidence → human review (strict)</text>
+
+  <!-- Evidence store band -->
+  <rect x="190" y="364" width="680" height="44" rx="10" fill="#eef1f6" stroke="#d7dee8"/>
+  <text x="206" y="390" class="band" fill="#102a44">Evidence store</text>
+  <text x="340" y="390" class="note">append-only · content-addressed · secret-redacted · replayable — shared across all stages</text>
+
+  <!-- Reporting + outputs -->
+  <text x="28" y="446" class="ioT">Reporting &amp; Outputs (S7+)</text>
+  <rect x="20" y="456" width="920" height="64" rx="10" fill="#102a44"/>
+  <text x="40" y="482" fill="#ffffff" font-size="12" font-weight="700">report.json</text>
+  <text x="170" y="482" fill="#ffffff" font-size="12" font-weight="700">report.sarif (2.1.0)</text>
+  <text x="360" y="482" fill="#ffffff" font-size="12" font-weight="700">report.md</text>
+  <text x="500" y="482" fill="#ffffff" font-size="12" font-weight="700">executive.md</text>
+  <text x="660" y="482" fill="#ffffff" font-size="12" font-weight="700">tickets.json</text>
+  <text x="40" y="504" class="sub">SARIF for code-scanning dashboards · owner-routed tickets · leadership summary · full machine-readable run</text>
+
+  <!-- down arrow to reporting -->
+  <line x1="530" y1="408" x2="530" y2="452" stroke="#0a7873" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>

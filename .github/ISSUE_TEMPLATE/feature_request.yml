@@ -1,0 +1,53 @@
+name: Feature request
+description: Suggest an enhancement, a new scanner, or a framework mapping
+title: "[feat]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea! Please keep proposals aligned with the project's
+        principles: **evidence-first, deterministic, safe-by-default, and
+        offline-capable**.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / motivation
+      description: What problem does this solve? Who benefits (defender / red team / both)?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the feature, new scanner, CLI flag, or framework mapping.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      multiple: true
+      options:
+        - New scanner / detection
+        - Risk scoring / severity
+        - Reliability / hallucination guard
+        - Reporting / SARIF / exporters
+        - Identity graph / attack paths
+        - CLI / UX
+        - Framework mapping (OWASP / ATT&CK / ATLAS / NIST AI RMF)
+        - Docs / examples
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: principles
+    attributes:
+      label: Alignment
+      options:
+        - label: This can be implemented deterministically (same inputs → same output).
+        - label: This keeps the core harness read-only / safe by default.
+        - label: This does not add a required network call or hard dependency.

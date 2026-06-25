@@ -1,0 +1,13 @@
+.git
+.github
+.venv
+venv
+__pycache__
+*.pyc
+*.egg-info
+build
+dist
+argus-runs
+.pytest_cache
+.DS_Store
+docs/*.pdf

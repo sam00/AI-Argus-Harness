@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-argus-harness"
+version = "0.1.0"
+description = "AI-Argus-Harness — an evidence-first, identity-aware enterprise security intelligence harness."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Sam Gupta" }]
+keywords = ["security", "harness", "scanner", "identity", "sarif", "enterprise"]
+
+[project.urls]
+Homepage = "https://github.com/sam00/ai-argus-harness"
+Repository = "https://github.com/sam00/ai-argus-harness"
+Issues = "https://github.com/sam00/ai-argus-harness/issues"
+Changelog = "https://github.com/sam00/ai-argus-harness/blob/main/CHANGELOG.md"
+Security = "https://github.com/sam00/ai-argus-harness/security/policy"
+
+# Core harness has NO hard third-party dependencies so that offline / air-gapped
+# scanning works out of the box. Optional integrations are declared as extras.
+dependencies = []
+
+[project.optional-dependencies]
+yaml = ["PyYAML>=6.0"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+argus = "ai_argus.cli:main"
+ai-argus = "ai_argus.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ai_argus*"]
+
+[tool.setuptools.package-data]
+ai_argus = ["schemas/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

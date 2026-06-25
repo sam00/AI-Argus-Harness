@@ -1,0 +1,37 @@
+{
+  "_comment": "Global config template. Copy to ~/.config/ai-argus/config.json (or set AI_ARGUS_HOME). API KEYS ARE NEVER STORED HERE — only the NAME of the env var that holds the key.",
+
+  "provider": "offline",
+  "model": "auto",
+  "api_key_env": "",
+  "base_url": "",
+
+  "routing": {
+    "reasoning": "offline",
+    "code": "offline",
+    "summaries": "offline",
+    "validation": "offline",
+    "reports": "offline"
+  },
+
+  "profile": "enterprise",
+  "cost_mode": "balanced",
+  "stealth_mode": "passive",
+  "strict": false,
+  "diff": false,
+  "auth_scan": false,
+  "workers": 8,
+  "auto_workers": true,
+  "confidence_threshold": "medium",
+
+  "budget": {
+    "daily_usd": 5.0,
+    "monthly_usd": 100.0,
+    "max_scan_usd": 2.0
+  },
+
+  "reports": ["json", "sarif", "markdown"],
+  "identity_graph": true,
+  "cache": true,
+  "project_name": "acme-enterprise"
+}

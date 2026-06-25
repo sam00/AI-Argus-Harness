@@ -1,0 +1,14 @@
+project:
+  name: production
+  profile: enterprise
+  model: auto
+  stealth: true
+  budget: balanced
+  workers: auto
+  cache: enabled
+  identity_graph: enabled
+  sarif: true
+  reports:
+    - markdown
+    - json
+    - sarif

@@ -1,0 +1,75 @@
+name: Bug report
+description: Report a defect in AI-Argus-Harness (NOT a security vulnerability)
+title: "[bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug! 
+
+        ⚠️ **Do not report security vulnerabilities here.** Use private reporting
+        via the **Security** tab — see [SECURITY.md](../blob/main/SECURITY.md).
+
+        ⚠️ **Do not paste real secrets, credentials, or customer data.** Redact
+        anything sensitive.
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight checklist
+      options:
+        - label: This is not a security vulnerability (those go through the Security tab).
+          required: true
+        - label: I searched existing issues and didn't find a duplicate.
+          required: true
+        - label: I have removed any secrets/credentials/PII from this report.
+          required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the bug and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Exact commands (prefer `--offline` for deterministic repro).
+      placeholder: |
+        1. argus scan ./examples/demo-target --offline --no-auth-scan ...
+        2. ...
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version / commit
+      description: Output of `argus version` (or the commit SHA).
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Linux
+        - macOS
+        - Windows
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: "3.11.x"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant output / logs
+      description: Paste console output. Redact anything sensitive.
+      render: shell

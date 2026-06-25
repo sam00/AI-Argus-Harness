@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/sam00/ai-argus-harness/schemas/evidence.schema.json",
+  "title": "Evidence",
+  "type": "object",
+  "required": ["source", "detail", "confidence"],
+  "properties": {
+    "source": {
+      "type": "string",
+      "enum": ["scanner", "log", "config", "code", "cloud-api", "endpoint-agent"]
+    },
+    "detail": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "confidence": { "type": "string", "enum": ["low", "medium", "high"] },
+    "raw_ref": { "type": ["string", "null"] }
+  }
+}

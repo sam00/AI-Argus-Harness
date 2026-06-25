@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/sam00/ai-argus-harness/schemas/identity.schema.json",
+  "title": "Identity",
+  "type": "object",
+  "required": ["id", "kind", "name"],
+  "properties": {
+    "id": { "type": "string" },
+    "kind": {
+      "type": "string",
+      "enum": ["user", "group", "role", "service-account", "oauth-app", "ci-identity", "external", "workload"]
+    },
+    "name": { "type": "string" },
+    "provider": { "type": "string" },
+    "privileged": { "type": "boolean" },
+    "attributes": { "type": "object" }
+  }
+}
