@@ -19,6 +19,11 @@
   <img src="docs/screenshots/cli-scan.png" alt="AI-Argus-Harness CLI — offline scan summary plus an evidence-backed argus explain view showing the identity attack path" width="780">
 </p>
 
+**Coverage — 12 layers:** Domain · Network · AWS · GCP · Kubernetes ·
+**Endpoint (Windows/macOS/Linux)** · Application/API · SaaS/IdP · Supply chain ·
+CI/CD · Secrets · Data exposure. Full per‑capability status →
+[`docs/coverage.md`](docs/coverage.md) · [Coverage section ↓](#coverage).
+
 ## Why this exists
 
 Most scanners drown you in disconnected, low-context findings — and "AI security"
