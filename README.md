@@ -20,7 +20,7 @@
 </p>
 
 **Coverage — 12 layers:** Domain · Network · AWS · GCP · Kubernetes ·
-**Endpoint (Windows/macOS/Linux)** · Application/API · SaaS/IdP · Supply chain ·
+Endpoint (Windows/macOS/Linux) · Application/API · SaaS/IdP · Supply chain ·
 CI/CD · Secrets · Data exposure. Full per‑capability status →
 [`docs/coverage.md`](docs/coverage.md) · [Coverage section ↓](#coverage).
 
