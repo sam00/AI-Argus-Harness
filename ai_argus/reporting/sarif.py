@@ -62,7 +62,7 @@ def to_sarif(findings: List[Finding], version: str = "0.1.0") -> Dict[str, Any]:
                 "driver": {
                     "name": "AI-Argus-Harness",
                     "version": version,
-                    "informationUri": "https://github.com/sam00/ai-argus-harness",
+                    "informationUri": "https://github.com/sam00/AI-Argus-Harness",
                     "rules": _rules(findings),
                 }
             },

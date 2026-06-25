@@ -21,8 +21,8 @@ evidence-first security assessment harness, and contributions that keep it
 ## Development setup
 
 ```bash
-git clone git@github.com:sam00/ai-argus-harness.git
-cd ai-argus-harness
+git clone git@github.com:sam00/AI-Argus-Harness.git
+cd AI-Argus-Harness
 
 # editable install with dev + optional extras
 python3 -m venv .venv && source .venv/bin/activate

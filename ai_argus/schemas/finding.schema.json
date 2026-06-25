@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/sam00/ai-argus-harness/schemas/finding.schema.json",
+  "$id": "https://github.com/sam00/AI-Argus-Harness/schemas/finding.schema.json",
   "title": "Finding",
   "type": "object",
   "required": ["finding_id", "asset", "evidence", "identity_path", "impact", "confidence", "remediation", "owner"],

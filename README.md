@@ -1,8 +1,8 @@
 # AI-Argus-Harness
 
-[![CI](https://github.com/sam00/ai-argus-harness/actions/workflows/ci.yml/badge.svg)](https://github.com/sam00/ai-argus-harness/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/sam00/ai-argus-harness/actions/workflows/codeql.yml/badge.svg)](https://github.com/sam00/ai-argus-harness/actions/workflows/codeql.yml)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/sam00/ai-argus-harness/badge)](https://securityscorecards.dev/viewer/?uri=github.com/sam00/ai-argus-harness)
+[![CI](https://github.com/sam00/AI-Argus-Harness/actions/workflows/ci.yml/badge.svg)](https://github.com/sam00/AI-Argus-Harness/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/sam00/AI-Argus-Harness/actions/workflows/codeql.yml/badge.svg)](https://github.com/sam00/AI-Argus-Harness/actions/workflows/codeql.yml)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/sam00/AI-Argus-Harness/badge)](https://securityscorecards.dev/viewer/?uri=github.com/sam00/AI-Argus-Harness)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](pyproject.toml)
 

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/sam00/ai-argus-harness/schemas/chain.schema.json",
+  "$id": "https://github.com/sam00/AI-Argus-Harness/schemas/chain.schema.json",
   "title": "Chain",
   "type": "object",
   "required": ["chain_id", "finding_ids"],

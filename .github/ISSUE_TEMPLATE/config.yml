@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: 🔒 Report a security vulnerability
-    url: https://github.com/sam00/ai-argus-harness/security/advisories/new
+    url: https://github.com/sam00/AI-Argus-Harness/security/advisories/new
     about: Please report vulnerabilities privately via GitHub Security Advisories. Do NOT open a public issue.
   - name: 💬 Questions & discussion
-    url: https://github.com/sam00/ai-argus-harness/discussions
+    url: https://github.com/sam00/AI-Argus-Harness/discussions
     about: Ask usage questions or propose ideas in Discussions.

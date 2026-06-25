@@ -13,11 +13,11 @@ authors = [{ name = "Sam Gupta" }]
 keywords = ["security", "harness", "scanner", "identity", "sarif", "enterprise"]
 
 [project.urls]
-Homepage = "https://github.com/sam00/ai-argus-harness"
-Repository = "https://github.com/sam00/ai-argus-harness"
-Issues = "https://github.com/sam00/ai-argus-harness/issues"
-Changelog = "https://github.com/sam00/ai-argus-harness/blob/main/CHANGELOG.md"
-Security = "https://github.com/sam00/ai-argus-harness/security/policy"
+Homepage = "https://github.com/sam00/AI-Argus-Harness"
+Repository = "https://github.com/sam00/AI-Argus-Harness"
+Issues = "https://github.com/sam00/AI-Argus-Harness/issues"
+Changelog = "https://github.com/sam00/AI-Argus-Harness/blob/main/CHANGELOG.md"
+Security = "https://github.com/sam00/AI-Argus-Harness/security/policy"
 
 # Core harness has NO hard third-party dependencies so that offline / air-gapped
 # scanning works out of the box. Optional integrations are declared as extras.

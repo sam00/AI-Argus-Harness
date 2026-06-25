@@ -61,5 +61,5 @@ First public release.
 - Secret redaction in the evidence store.
 - No telemetry; the core harness runs fully offline/air-gapped.
 
-[Unreleased]: https://github.com/sam00/ai-argus-harness/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/sam00/ai-argus-harness/releases/tag/v0.1.0
+[Unreleased]: https://github.com/sam00/AI-Argus-Harness/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/sam00/AI-Argus-Harness/releases/tag/v0.1.0
